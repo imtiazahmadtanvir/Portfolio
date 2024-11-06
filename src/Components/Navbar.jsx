@@ -3,20 +3,20 @@ import { Link } from "react-router-dom";
 
 const Navbar = () => {
     return (
-        <div className=" bg-gray-200 ">
+        <div className=" bg-transparent ">
            
-           <div  className="flex justify-between items-center w-11/12  mx-auto py-6">
+           <div  className="flex justify-between  items-center w-10/12  mx-auto py-6">
              {/* Title */}
              <div className="w-11/12 mx-auto">
-                <a className="text-2xl font-bold text-gray-800">Gadget Heaven</a>
+                <a className="text-2xl font-bold ">Gadget Heaven</a>
             </div>
             
             {/* Center Links */}
-            <div className="hidden w-11/12 mx-auto lg:flex space-x-8">
+            <div className="w-11/12 mx-auto flex space-x-8">
 
-                <Link to='/' className="text-gray-700 hover:text-gray-900">Home</Link>
-                <Link to='/statistics' className="text-gray-700 hover:text-gray-900">Statistics</Link>
-                <Link to='/dashboard' className="text-purple-600 font-semibold hover:text-purple-800">Dashboard</Link>
+                <Link to='/' className=" hover:text-red-900">Home</Link>
+                <Link to='/statistics' className=" hover:text-red-900">Statistics</Link>
+                <Link to='/dashboard' className=" hover:text-red-900">Dashboard</Link>
             </div>
 
             {/* Right Icons */}

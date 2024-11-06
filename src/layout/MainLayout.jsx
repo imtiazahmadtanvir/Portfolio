@@ -1,14 +1,16 @@
 import Footer from "../Components/Footer";
 import Navbar from "../Components/Navbar";
 import Outlet from "../Components/Outlet";
+
+
 const MainLayout = () => {
     return (
         <div className="bg-white">
             {/* Navbar */}
             <Navbar/>
-
-            <div className='min-h-[calc(100vh-388px)]'>  
-                
+             
+            <div className='min-h-[calc(100vh-388px)] w-full'>  
+             
                 {/* daynamic section */}
                 <Outlet/>
 

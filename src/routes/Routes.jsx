@@ -1,9 +1,9 @@
 
 import MainLayout from '../layout/MainLayout.jsx'
 import { createBrowserRouter } from 'react-router-dom'
-import home from '../pages/home.jsx'
-import statistics from '../pages/statistics.jsx'
-import dashboard from '../pages/dashboard.jsx'
+import Home from '../pages/home.jsx'
+import Statistics from '../pages/statistics.jsx'
+import Dashboard from '../pages/dashboard.jsx'
 //path for multiple page its througing from array
 const routes= createBrowserRouter(
     [
@@ -14,18 +14,18 @@ const routes= createBrowserRouter(
             children:[
                 {
                     path:'/',
-                    element:<home/>,
+                    element:<Home/>,
                     children:[
                         
                     ]
                 },
                 {
                     path:'/statistics',
-                    element: <statistics />
+                    element: <Statistics />
                 },
                 {
                     path:'/dashboard',
-                    element: <dashboard />
+                    element: <Dashboard />
                 }
             ]
          },

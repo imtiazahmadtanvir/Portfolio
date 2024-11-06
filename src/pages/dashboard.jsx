@@ -1,5 +1,6 @@
 
-const dashboard = () => {
+
+const Dashboard = () => {
     return (
         <div>
             
@@ -7,4 +8,4 @@ const dashboard = () => {
     );
 };
 
-export default dashboard;
+export default Dashboard;

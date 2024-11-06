@@ -1,5 +1,5 @@
 
-const statistics = () => {
+const Statistics = () => {
     return (
         <div>
             
@@ -7,4 +7,4 @@ const statistics = () => {
     );
 };
 
-export default statistics;
+export default Statistics;

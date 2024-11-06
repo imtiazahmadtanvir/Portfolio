@@ -1,9 +1,9 @@
-
+import Home from "../pages/home";
 
 const Outlet = () => {
     return (
-        <div>
-            
+        <div className="">
+            <Home/>
         </div>
     );
 };
