@@ -1,7 +1,10 @@
+import { useLoaderData } from "react-router-dom";
 import Heading from "../Components/heading";
 import VRImage from "../assets/banner.jpg"
 
 const Home = () => {
+
+             const categories= useLoaderData()
   return (
     
        // header
@@ -25,16 +28,16 @@ const Home = () => {
           <div className="py-10 text-black text-3xl">
             <Heading title={'Explore Cutting-Edge Gadgets'}/>
           </div>
-
-          <div className="w-11/12 flex lg:flex-row md:flex-row mx-auto">
-            <div className="w-3/12">
-                    <h1>hello</h1>
+        <div className="flex w-11/12 mx-auto ">
+            <div className="flex flex-col w-2/12 gap-1 justify-between">
+                {/* <Categories categories={categories}/> */}
             </div>
-            <div className="w-9/12">
-                      <h1>hello</h1>
-            </div>
+            <div className="rounded-xl shadow-lg w-9/12  flex flex-col mx-auto">
+                
+            </div> 
 
-          </div>
+        </div>
+            
 
       </div>
       

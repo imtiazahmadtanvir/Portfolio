@@ -1,0 +1,26 @@
+[
+    {
+        "product_id": "LP1001",
+        "category": "laptops"
+    },
+    {
+        "product_id": "PH2001",
+        "category": "phones"
+    },
+    {
+        "product_id": "AC3001",
+        "category": "accessories"
+    },
+    {
+        "product_id": "SW4001",
+        "category": "smart watches"
+    },
+    {
+        "product_id": "MB5001",
+        "category": "macbook"
+    },
+    {
+        "product_id": "IP6001",
+        "category": "iphone"
+    }
+]

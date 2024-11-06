@@ -9,7 +9,7 @@ const MainLayout = () => {
             {/* Navbar */}
             <Navbar/>
              
-            <div className='min-h-[calc(100vh-388px)] w-full'>  
+            <div className='min-h-[calc(100vh-388px)]'>  
              
                 {/* daynamic section */}
                 <Outlet/>

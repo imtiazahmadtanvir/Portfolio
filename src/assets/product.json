@@ -1,0 +1,97 @@
+[
+    {
+        "product_id": "LP1001",
+        "product_title": "Dell XPS 13",
+        "product_image": "https://ibb.co.com/ZgxKzQP",
+        "category": "laptops",
+        "price": 999.99,
+        "description": "A compact and powerful 13-inch laptop with a stunning display.",
+        "specification": [
+            { "key": "Processor", "value": "Intel Core i7" },
+            { "key": "RAM", "value": "16GB" },
+            { "key": "Storage", "value": "512GB SSD" },
+            { "key": "Battery Life", "value": "Up to 10 hours" }
+        ],
+        "availability": true,
+        "rating": 4.5
+    },
+    {
+        "product_id": "PH2001",
+        "product_title": "Samsung Galaxy S21",
+        "product_image": "https://ibb.co.com/zNRsjY3",
+        "category": "phones",
+        "price": 799.99,
+        "description": "The next-generation smartphone with pro-grade camera and display.",
+        "specification": [
+            { "key": "Display", "value": "6.2 inches" },
+            { "key": "Processor", "value": "Exynos 2100" },
+            { "key": "RAM", "value": "8GB" },
+            { "key": "Battery", "value": "4000mAh" }
+        ],
+        "availability": true,
+        "rating": 4.7
+    },
+    {
+        "product_id": "AC3001",
+        "product_title": "JBL Wireless Headphones",
+        "product_image": "https://ibb.co.com/m6PbTxm",
+        "category": "accessories",
+        "price": 199.99,
+        "description": "Noise-cancelling wireless headphones with powerful sound.",
+        "specification": [
+            { "key": "Battery Life", "value": "30 hours" },
+            { "key": "Connectivity", "value": "Bluetooth 5.0" },
+            { "key": "Noise Cancellation", "value": "Active" }
+        ],
+        "availability": true,
+        "rating": 4.3
+    },
+    {
+        "product_id": "SW4001",
+        "product_title": "Apple Watch Series 7",
+        "product_image": "https://ibb.co.com/n39w3yv",
+        "category": "smart watches",
+        "price": 399.99,
+        "description": "The most durable Apple Watch with advanced health features.",
+        "specification": [
+            { "key": "Display", "value": "1.9 inches" },
+            { "key": "Water Resistance", "value": "50m" },
+            { "key": "Battery Life", "value": "18 hours" }
+        ],
+        "availability": false,
+        "rating": 4.8
+    },
+    {
+        "product_id": "MB5001",
+        "product_title": "MacBook Air M1",
+        "product_image": "https://ibb.co.com/kGpNRX3",
+        "category": "macbook",
+        "price": 999.99,
+        "description": "Apple’s thinnest and lightest notebook with the powerful M1 chip.",
+        "specification": [
+            { "key": "Processor", "value": "Apple M1" },
+            { "key": "RAM", "value": "8GB" },
+            { "key": "Storage", "value": "256GB SSD" },
+            { "key": "Battery Life", "value": "Up to 18 hours" }
+        ],
+        "availability": true,
+        "rating": 4.9
+    },
+    {
+        "product_id": "IP6001",
+        "product_title": "iPhone 13 Pro",
+        "product_image": "https://ibb.co.com/DfBHrzj",
+        "category": "iphone",
+        "price": 999.99,
+        "description": "The ultimate iPhone with pro camera system and A15 Bionic chip.",
+        "specification": [
+            { "key": "Display", "value": "6.1 inches" },
+            { "key": "Processor", "value": "A15 Bionic" },
+            { "key": "Camera", "value": "Triple 12MP" },
+            { "key": "Battery Life", "value": "Up to 22 hours" }
+        ],
+        "availability": true,
+        "rating": 4.6
+    }
+]
+

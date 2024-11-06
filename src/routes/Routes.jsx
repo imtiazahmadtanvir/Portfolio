@@ -15,7 +15,12 @@ const routes= createBrowserRouter(
                 {
                     path:'/',
                     element:<Home/>,
+                    loader: () => fetch('../assets/cetegories.json'),
                     children:[
+
+                        {
+                            path:''
+                        }
                         
                     ]
                 },
