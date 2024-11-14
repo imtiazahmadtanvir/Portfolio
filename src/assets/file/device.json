@@ -1,0 +1,172 @@
+[
+    {
+        "product_id": "1",
+        "product_title": "Apple iPhone 14 Pro",
+        "product_image": "images/iPhone-14-Pro.webp",
+        "category": "Phones",
+        "price": 999,
+        "description": "Apple iPhone 14 Pro with a stunning new camera and processor.",
+        "specification": [
+            "6.1-inch Super Retina XDR display",
+            "A16 Bionic chip",
+            "48MP main camera",
+            "5G connectivity",
+            "iOS 16"
+        ],
+        "availability": true,
+        "rating": 4.8
+    },
+    {
+        "product_id": "2",
+        "product_title": "Samsung Galaxy S23 Ultra",
+        "product_image": "images/Samsung-Galaxy-S23-Ultra.webp",
+        "category": "Phones",
+        "price": 1199,
+        "description": "Samsung Galaxy S23 Ultra with enhanced S Pen support and powerful performance.",
+        "specification": [
+            "6.8-inch Dynamic AMOLED display",
+            "Snapdragon 8 Gen 2",
+            "108MP main camera",
+            "5000mAh battery",
+            "One UI 5.0"
+        ],
+        "availability": true,
+        "rating": 4.7
+    },
+    {
+        "product_id": "3",
+        "product_title": "Apple MacBook Pro 16-inch",
+        "product_image": "images/MacBook-Pro-16.webp",
+        "category": "Laptops",
+        "price": 2499,
+        "description": "Apple MacBook Pro 16-inch with M2 Max chip for pro performance.",
+        "specification": [
+            "16-inch Liquid Retina XDR display",
+            "Apple M2 Max chip",
+            "32GB RAM",
+            "1TB SSD",
+            "macOS Ventura"
+        ],
+        "availability": true,
+        "rating": 4.9
+    },
+    {
+        "product_id": "4",
+        "product_title": "Apple Watch Series 8",
+        "product_image": "images/Apple-Watch-Series-8.webp",
+        "category": "Smart Watches",
+        "price": 399,
+        "description": "Apple Watch Series 8 with advanced health monitoring.",
+        "specification": [
+            "Always-On Retina display",
+            "Blood oxygen and ECG apps",
+            "Swim-proof",
+            "Up to 18 hours battery life",
+            "watchOS 9"
+        ],
+        "availability": true,
+        "rating": 4.8
+    },
+    {
+        "product_id": "5",
+        "product_title": "Dell XPS 13 Plus",
+        "product_image": "images/Dell-XPS-13-Plus.webp",
+        "category": "Laptops",
+        "price": 1899,
+        "description": "Dell XPS 13 Plus with a modern design and improved keyboard.",
+        "specification": [
+            "13.4-inch 4K display",
+            "Intel Core i7-12700H",
+            "16GB RAM",
+            "512GB SSD",
+            "Windows 11"
+        ],
+        "availability": true,
+        "rating": 4.6
+    },
+    {
+        "product_id": "6",
+        "product_title": "Asus ROG Phone 7 Ultimate",
+        "product_image": "images/Asus-ROG-Phone-7-Ultimate.webp",
+        "category": "Phones",
+        "price": 1499,
+        "description": "Asus ROG Phone 7 Ultimate for high-performance mobile gaming.",
+        "specification": [
+            "6.8-inch AMOLED display",
+            "Snapdragon 8 Gen 2",
+            "6000mAh battery with 65W charging",
+            "Up to 1TB storage",
+            "Dual USB-C ports"
+        ],
+        "availability": true,
+        "rating": 4.9
+    },
+    {
+        "product_id": "7",
+        "product_title": "HP Spectre x360 14",
+        "product_image": "images/HP-Spectre-x360-14.webp",
+        "category": "Laptops",
+        "price": 1599,
+        "description": "HP Spectre x360 14 with convertible touchscreen design.",
+        "specification": [
+            "13.5-inch OLED display",
+            "Intel Core i7-1355G7",
+            "16GB RAM",
+            "1TB SSD",
+            "Windows Hello"
+        ],
+        "availability": true,
+        "rating": 4.7
+    },
+    {
+        "product_id": "8",
+        "product_title": "Logitech MX Master 3S",
+        "product_image": "images/Logitech-MX-Master-3S.webp",
+        "category": "Accessories",
+        "price": 99,
+        "description": "Logitech MX Master 3S ergonomic mouse with advanced productivity features.",
+        "specification": [
+            "MagSpeed scroll wheel",
+            "Advanced ergonomic design",
+            "4000 DPI sensor",
+            "Works on any surface",
+            "Customizable buttons"
+        ],
+        "availability": true,
+        "rating": 4.7
+    },
+    {
+        "product_id": "9",
+        "product_title": "Apple AirTag",
+        "product_image": "images/Apple-AirTag.webp",
+        "category": "Accessories",
+        "price": 29,
+        "description": "Apple AirTag for easy tracking of personal items.",
+        "specification": [
+            "Precision tracking",
+            "Water and dust resistant",
+            "Replaceable battery",
+            "Works with Find My app",
+            "Compact design"
+        ],
+        "availability": true,
+        "rating": 4.6
+    },
+    {
+        "product_id": "10",
+        "product_title": "Tile Pro",
+        "product_image": "images/Tile-Pro.webp",
+        "category": "Accessories",
+        "price": 34,
+        "description": "Tile Pro tracker with long-range tracking and loud alarm.",
+        "specification": [
+            "400 feet range",
+            "Replaceable battery",
+            "Water-resistant",
+            "Loud ring tone",
+            "Works with Alexa and Google"
+        ],
+        "availability": true,
+        "rating": 4.5
+    }
+]
