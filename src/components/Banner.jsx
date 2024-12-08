@@ -1,4 +1,4 @@
-import bannerImg from "../assets/Image/banner.jpg";
+import BannerImg from "../assets/Image/banner.jpg";
 import { NavLink } from "react-router-dom";
 
 const Banner = () => {
@@ -27,8 +27,8 @@ const Banner = () => {
 
       <div className="w-3/5 2xl:w-1/2 mx-auto -mt-36 rounded-3xl border-2 border-[#FFFFFF]">
         <img
-          className="rounded-3xl w-full h-[400px] object-fill p-3"
-          src={bannerImg}
+          className="rounded-3xl  w-full lg:h-[400px] object-fill p-3"
+          src={BannerImg}
           alt="Promotional Banner"
         />
       </div>

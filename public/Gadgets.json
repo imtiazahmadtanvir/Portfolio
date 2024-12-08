@@ -1,0 +1,305 @@
+[
+    {
+        "product_id": "1",
+        "product_title": "Apple iPhone 15 Pro Max",
+        "product_image": "https://i.ibb.co.com/Z8xDhDJ/apple-iphone-15-pro-max-1.jpg",
+        "category": "Phones",
+        "price": 1299,
+        "description": "Experience the ultimate smartphone with the iPhone 15 Pro Max.",
+        "specification": [
+            "6.7-inch Super Retina XDR display",
+            "A17 Bionic chip",
+            "Triple-camera system (48MP Main, 12MP Telephoto, 12MP Ultrawide)",
+            "LiDAR Scanner",
+            "Up to 2TB storage"
+        ],
+        "availability": true,
+        "rating": 4.8
+    },
+    {
+        "product_id": "2",
+        "product_title": "Samsung Galaxy S23 Ultra",
+        "product_image": "https://i.ibb.co.com/Z8xDhDJ/apple-iphone-15-pro-max-1.jpg",
+        "category": "Phones",
+        "price": 1199,
+        "description": "Samsung Galaxy S23 Ultra with high-end camera and storage options.",
+        "specification": [
+            "6.8-inch AMOLED display",
+            "Snapdragon 8 Gen 2",
+            "200MP Quad-camera setup",
+            "5000mAh battery",
+            "Up to 1TB storage"
+        ],
+        "availability": true,
+        "rating": 4.7
+    },
+    {
+        "product_id": "3",
+        "product_title": "Google Pixel 8 Pro",
+        "product_image": "https://i.ibb.co.com/Z8xDhDJ/apple-iphone-15-pro-max-1.jpg",
+        "category": "Phones",
+        "price": 999,
+        "description": "Google Pixel 8 Pro with advanced AI camera features.",
+        "specification": [
+            "6.7-inch OLED display",
+            "Google Tensor G3",
+            "Triple-camera system (50MP Main, 12MP Ultra-wide, 48MP Telephoto)",
+            "Titan M2 security chip",
+            "Up to 512GB storage"
+        ],
+        "availability": true,
+        "rating": 4.6
+    },
+    {
+        "product_id": "4",
+        "product_title": "Apple MacBook Pro 14",
+        "product_image": "https://i.ibb.co.com/Z8xDhDJ/apple-iphone-15-pro-max-1.jpg",
+        "category": "Laptops",
+        "price": 1999,
+        "description": "Apple MacBook Pro 14 with M2 Pro chip for professionals.",
+        "specification": [
+            "14-inch Liquid Retina XDR display",
+            "Apple M2 Pro chip",
+            "16GB RAM",
+            "512GB SSD",
+            "Touch ID"
+        ],
+        "availability": true,
+        "rating": 4.9
+    },
+    {
+        "product_id": "5",
+        "product_title": "Dell XPS 13",
+        "product_image": "https://i.ibb.co.com/Z8xDhDJ/apple-iphone-15-pro-max-1.jpg",
+        "category": "Laptops",
+        "price": 1299,
+        "description": "Dell XPS 13 with compact design and high performance.",
+        "specification": [
+            "13.4-inch FHD+ display",
+            "Intel Core i7-1360P",
+            "16GB RAM",
+            "512GB SSD",
+            "Fingerprint reader"
+        ],
+        "availability": true,
+        "rating": 4.8
+    },
+    {
+        "product_id": "6",
+        "product_title": "Microsoft Surface Laptop 5",
+        "product_image": "https://i.ibb.co.com/Z8xDhDJ/apple-iphone-15-pro-max-1.jpg",
+        "category": "Laptops",
+        "price": 1499,
+        "description": "Microsoft Surface Laptop 5 with touch screen and sleek design.",
+        "specification": [
+            "13.5-inch PixelSense display",
+            "Intel Core i5-1240P",
+            "8GB RAM",
+            "256GB SSD",
+            "Windows Hello"
+        ],
+        "availability": true,
+        "rating": 4.5
+    },
+    {
+        "product_id": "7",
+        "product_title": "Apple iPad Pro 12.9",
+        "product_image": "https://i.ibb.co.com/Z8xDhDJ/apple-iphone-15-pro-max-1.jpg",
+        "category": "Tablets",
+        "price": 1099,
+        "description": "Apple iPad Pro with M2 chip for creative professionals.",
+        "specification": [
+            "12.9-inch Liquid Retina XDR display",
+            "Apple M2 chip",
+            "Face ID",
+            "Up to 2TB storage",
+            "ProMotion technology"
+        ],
+        "availability": true,
+        "rating": 4.7
+    },
+    {
+        "product_id": "8",
+        "product_title": "Samsung Galaxy Tab S9 Ultra",
+        "product_image": "https://i.ibb.co.com/Z8xDhDJ/apple-iphone-15-pro-max-1.jpg",
+        "category": "Tablets",
+        "price": 999,
+        "description": "Samsung Galaxy Tab S9 Ultra with massive display and performance.",
+        "specification": [
+            "14.6-inch Super AMOLED display",
+            "Snapdragon 8 Gen 2",
+            "Dual-camera setup",
+            "10090mAh battery",
+            "Up to 1TB storage"
+        ],
+        "availability": true,
+        "rating": 4.6
+    },
+    {
+        "product_id": "9",
+        "product_title": "Lenovo Tab P11 Pro",
+        "product_image": "https://i.ibb.co.com/Z8xDhDJ/apple-iphone-15-pro-max-1.jpg",
+        "category": "Tablets",
+        "price": 599,
+        "description": "Lenovo Tab P11 Pro with OLED display for enhanced viewing experience.",
+        "specification": [
+            "11.5-inch OLED display",
+            "Qualcomm Snapdragon 730G",
+            "13MP rear camera",
+            "6GB RAM",
+            "128GB storage"
+        ],
+        "availability": true,
+        "rating": 4.3
+    },
+    {
+        "product_id": "10",
+        "product_title": "Sony WH-1000XM5",
+        "product_image": "https://i.ibb.co.com/Z8xDhDJ/apple-iphone-15-pro-max-1.jpg",
+        "category": "Headphones",
+        "price": 399,
+        "description": "Sony WH-1000XM5 with industry-leading noise cancellation.",
+        "specification": [
+            "30 hours of battery life",
+            "Quick charging",
+            "Adaptive Sound Control",
+            "High-resolution audio"
+        ],
+        "availability": true,
+        "rating": 4.9
+    },
+    {
+        "product_id": "11",
+        "product_title": "Bose QuietComfort Earbuds II",
+        "product_image": "https://i.ibb.co.com/Z8xDhDJ/apple-iphone-15-pro-max-1.jpg",
+        "category": "Headphones",
+        "price": 299,
+        "description": "Bose QuietComfort Earbuds II with immersive sound and comfortable fit.",
+        "specification": [
+            "Noise-cancelling technology",
+            "Up to 6 hours per charge",
+            "Sweat and weather-resistant",
+            "High-fidelity sound"
+        ],
+        "availability": true,
+        "rating": 4.7
+    },
+    {
+        "product_id": "12",
+        "product_title": "Apple AirPods Max",
+        "product_image": "https://i.ibb.co.com/Z8xDhDJ/apple-iphone-15-pro-max-1.jpg",
+        "category": "Headphones",
+        "price": 549,
+        "description": "Apple AirPods Max with spatial audio and adaptive EQ.",
+        "specification": [
+            "Active Noise Cancellation",
+            "20 hours of listening time",
+            "Digital Crown control",
+            "High-fidelity sound"
+        ],
+        "availability": true,
+        "rating": 4.6
+    },
+    {
+        "product_id": "13",
+        "product_title": "Apple Watch Series 9",
+        "product_image": "https://i.ibb.co.com/Z8xDhDJ/apple-iphone-15-pro-max-1.jpg",
+        "category": "Wearables",
+        "price": 399,
+        "description": "Apple Watch Series 9 with enhanced health and fitness tracking.",
+        "specification": [
+            "Always-on Retina display",
+            "Heart rate monitoring",
+            "Blood oxygen sensor",
+            "ECG app",
+            "Fall detection"
+        ],
+        "availability": true,
+        "rating": 4.8
+    },
+    {
+        "product_id": "14",
+        "product_title": "Fitbit Versa 4",
+        "product_image": "https://i.ibb.co.com/Z8xDhDJ/apple-iphone-15-pro-max-1.jpg",
+        "category": "Wearables",
+        "price": 229,
+        "description": "Fitbit Versa 4 with comprehensive fitness tracking features.",
+        "specification": [
+            "Daily readiness score",
+            "Built-in GPS",
+            "Active Zone Minutes",
+            "Sleep tracking",
+            "Water-resistant"
+        ],
+        "availability": true,
+        "rating": 4.5
+    },
+    {
+        "product_id": "15",
+        "product_title": "Samsung Galaxy Watch 6",
+        "product_image": "https://i.ibb.co.com/Z8xDhDJ/apple-iphone-15-pro-max-1.jpg",
+        "category": "Wearables",
+        "price": 279,
+        "description": "Samsung Galaxy Watch 6 with advanced health monitoring.",
+        "specification": [
+            "Advanced sleep coaching",
+            "Body composition analysis",
+            "Heart rate monitoring",
+            "GPS and LTE options",
+            "Water-resistant"
+        ],
+        "availability": true,
+        "rating": 4.7
+    },
+    {
+        "product_id": "16",
+        "product_title": "OnePlus 11 Pro",
+        "product_image": "https://i.ibb.co.com/Z8xDhDJ/apple-iphone-15-pro-max-1.jpg",
+        "category": "Phones",
+        "price": 899,
+        "description": "OnePlus 11 Pro with flagship performance and Hasselblad camera.",
+        "specification": [
+            "6.7-inch Fluid AMOLED display",
+            "Snapdragon 8 Gen 2",
+            "Triple-camera setup (50MP Main, 48MP Ultra-wide, 32MP Telephoto)",
+            "5000mAh battery with 100W fast charging",
+            "Up to 512GB storage"
+        ],
+        "availability": true,
+        "rating": 4.5
+    },
+    {
+        "product_id": "17",
+        "product_title": "Xiaomi 13 Ultra",
+        "product_image": "https://i.ibb.co.com/Z8xDhDJ/apple-iphone-15-pro-max-1.jpg",
+        "category": "Phones",
+        "price": 799,
+        "description": "Xiaomi 13 Ultra with Leica-tuned camera and powerful performance.",
+        "specification": [
+            "6.73-inch AMOLED display",
+            "Snapdragon 8 Gen 2",
+            "Quad-camera setup (50MP Main, 50MP Telephoto, 50MP Ultra-wide, 50MP Super Telephoto)",
+            "5000mAh battery with 90W fast charging",
+            "Up to 1TB storage"
+        ],
+        "availability": true,
+        "rating": 4.6
+    },
+    {
+        "product_id": "18",
+        "product_title": "iPhone 13 Pro Max",
+        "product_image": "https://i.ibb.co.com/Z8xDhDJ/apple-iphone-15-pro-max-1.jpg",
+        "category": "Phones",
+        "price": 999,
+        "description": "iPhone 13 Pro Max with 4K display and advanced photography features.",
+        "specification": [
+            "6.5-inch 4K HDR OLED display",
+            "Snapdragon 8 Gen 2",
+            "Triple-camera setup (48MP Main, 12MP Ultra-wide, 12MP Telephoto)",
+            "5000mAh battery with 30W fast charging",
+            "Up to 512GB storage"
+        ],
+        "availability": true,
+        "rating": 4.4
+    }
+]

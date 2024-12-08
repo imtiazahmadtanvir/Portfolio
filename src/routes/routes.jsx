@@ -8,10 +8,11 @@ const routes= createBrowserRouter([
    {
       path: "/",
       element: <HomeLayout></HomeLayout>,
+      loader: () => fetch('/Gadgets.json'),
       errorElement: <ErrorPage></ErrorPage>,
     },
     {
-      path: "/lesson",
+      path: "/gedget",
       element: <ErrorPage></ErrorPage>
     },
     ])
