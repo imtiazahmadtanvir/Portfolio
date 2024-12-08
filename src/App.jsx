@@ -5,7 +5,7 @@ function App() {
   // const [count, setCount] = useState(0)
 
   return (
-    <>
+    <div>
     
     <p className='text-6xl'>
 
@@ -13,7 +13,7 @@ function App() {
 
     </p>
     <button className='btn btn-primary w-10'>dsassa</button>
-    </>
+    </div>
   )
 }
 

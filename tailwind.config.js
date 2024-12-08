@@ -1,14 +1,13 @@
-/** @type {import('tailwindcss').Config} */
-import daisyui from 'daisyui'
+/* eslint-disable no-undef */
 
-export default {
-  content: [
-    "./index.html",
-    "./src/**/*.{js,ts,jsx,tsx}",
-  ],
+
+module.exports = {
+  content: ["./src/**/*.{html,js,jsx,ts,tsx}"],
   theme: {
     extend: {},
   },
-  plugins: [daisyui],
-}
-
+  plugins: [require("daisyui")],
+  daisyui: {
+    themes: ["light", "dark", "cupcake"], // Customize themes
+  },
+};

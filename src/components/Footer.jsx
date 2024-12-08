@@ -11,21 +11,21 @@ const Footer = () => {
                 <div className='divider'></div>
 
                 <div className='flex justify-between md:w-1/2 mx-auto'>
-                    <nav className='flex flex-col text-black '>
-                        <h6 className="text-black  text-lg font-bold">Services</h6>
+                    <nav className='flex flex-col text-[#09080F99]'>
+                        <h6 className="text-[#09080F] text-lg font-bold">Services</h6>
                         <a className="link link-hover text-sm pt-2">Product Support</a>
                         <a className="link link-hover text-sm pt-2">Order Tracking</a>
                         <a className="link link-hover text-sm pt-2">Shipping & Delivery</a>
                         <a className="link link-hover text-sm pt-2">Returns</a>
                     </nav>
                     <nav className='flex flex-col text-[#09080F99]'>
-                        <h6 className="text-black  text-lg font-bold">Company</h6>
+                        <h6 className="text-[#09080F] text-lg font-bold">Company</h6>
                         <a className="link link-hover text-sm pt-2">About us</a>
                         <a className="link link-hover text-sm pt-2">Careers</a>
                         <a className="link link-hover text-sm pt-2">Contact</a>
                     </nav>
                     <nav className='flex flex-col text-[#09080F99]'>
-                        <h6 className="text-black text-lg font-bold">Legal</h6>
+                        <h6 className="text-[#09080F] text-lg font-bold">Legal</h6>
                         <a className="link link-hover text-sm pt-2">Terms of Service</a>
                         <a className="link link-hover text-sm pt-2">Privacy policy</a>
                         <a className="link link-hover text-sm pt-2">Cookie Policy</a>
