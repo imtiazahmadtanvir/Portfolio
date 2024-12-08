@@ -1,7 +1,7 @@
-import Banner from "../Components/Banner/Banner";
-import React , { useEffect } from 'react';
+// import React from 'react'
+import { useEffect } from 'react';
 import Products from "../Components/Products/Products";
-
+import Banner from "../Components/Banner/Banner"
 
 const Home = () => {
     useEffect(() => {

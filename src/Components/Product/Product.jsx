@@ -1,6 +1,6 @@
 import { NavLink } from 'react-router-dom';
 import Products from '../Products/Products';
-import product from 
+
 const Product = ({ product }) => {
     const { product_id, product_title, product_image, price } = product;
     return (
