@@ -11,7 +11,7 @@ const LeftBar = () => {
         <div className="grid grid-cols-1 gap-6">
             {/* Button for All Products */}
             <NavLink
-                to={`/`}
+                to={`/`}  // Ensure this matches the path in Home component
                 className={({ isActive }) =>
                     isActive
                         ? "btn bg-[#9538E2] text-white font-bold rounded-[32px] w-4/5 mx-auto mt-8"
@@ -26,7 +26,7 @@ const LeftBar = () => {
                 uniqueCategories.map((category, index) => (
                     <NavLink
                         key={index}
-                        to={`/home/${category}`}
+                        to={`/home/${category}`}  // Route will dynamically include the category
                         className={({ isActive }) =>
                             isActive
                                 ? "btn bg-[#9538E2] text-white font-bold rounded-[32px] w-4/5 mx-auto"

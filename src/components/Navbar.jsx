@@ -8,7 +8,7 @@ const Navbar = () => {
 
   const getActiveClass = (isActive) =>
     isActive
-      ? "text-white underline underline-offset-4"
+      ? "text-[#9538E2] bg-white underline underline-offset-4"
       : isHome
       ? "text-white"
       : "text-black";
@@ -60,7 +60,7 @@ const Navbar = () => {
             </li>
             <li>
               <NavLink
-                to="/about-us"
+                to="/about"
                 className={({ isActive }) => getActiveClass(isActive)}
               >
                 About Us
