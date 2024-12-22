@@ -41,7 +41,7 @@ const ProductDetails = () => {
             {/* details div */}
             <div className="w-11/12 mx-auto flex justify-center items-center hero bg-white rounded-3xl -mt-32 p-8">
                 <div className='space-y-4 basis-[70%] w-2/5 h-full'>
-                    <img src={`/images/${product_image.split('/').pop()}`} alt={`${product_image} image`} />
+                <img  src={product_image} alt={`${product_title} image`} />
                 </div>
                 <div className='space-y-3 basis-[70%] w-3/5'>
                     <h2 className='text-2xl font-bold'>{product_title}</h2>
