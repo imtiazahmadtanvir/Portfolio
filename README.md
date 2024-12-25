@@ -21,29 +21,42 @@ Product Listing: Displays gadgets across categories with images, prices, and det
 Shopping Cart & Wishlist: Add gadgets to the cart or wishlist, with toast notifications for feedback.
 Sorting Mechanism: Cart items can be sorted by price in descending order.
 Detailed Product Page: Comprehensive product details with Add to Cart and Wishlist buttons.
+
 📊 Pages and Functionalities
 Home Page: Banner section, product categories sidebar, gadget cards.
 Dashboard Page: Tabs for managing Cart and Wishlist.
 Statistics Page: Composed Chart showing Price vs Product Name.
 About Us Page: Overview of the store and its mission.
 404 Page: User-friendly error page for invalid routes.
+
+
 🛡️ State Management
 Context API: Used for managing cart and wishlist states.
 LocalStorage: For persisting user data.
+
+
 🔑 React Concepts Used
 State Management with Context API.
 Routing with react-router-dom.
 Conditional Rendering.
 Dynamic Titles using useLocation and useNavigate hooks.
 Data Persistence with LocalStorage.
+
+
+
 🎉 User Interaction
 Toast Notifications:
 On adding an item to the cart.
 On adding an item to the wishlist.
 Modal:
 For purchase confirmation with smooth navigation back to the home page.
+
+
 📈 Statistics Visualization
 Composed Chart: Visual representation of product prices vs names using recharts.
+
+
+
 📝 Additional Features
 Prevent adding duplicate items to the wishlist.
 Maximum cart value enforcement (1000 USD).
