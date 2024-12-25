@@ -14,9 +14,11 @@ const Navbar = () => {
       : "text-black";
 
   return (
-    <div className="lg:w-9/12 w-10/12 mx-auto navbar top-0 z-50">
+    <div className="lg:w-9/12 w-10/12 mx-auto navbar top-0 z-50 overflow-visible">
+      {/* Navbar Start */}
       <div className="navbar-start">
-        <div className="dropdown">
+        {/* Mobile Dropdown Menu */}
+        <div className="dropdown relative">
           <button tabIndex={0} className="btn btn-ghost lg:hidden">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -35,7 +37,8 @@ const Navbar = () => {
           </button>
           <ul
             tabIndex={0}
-            className="menu menu-sm dropdown-content bg-base-200 rounded-box mt-3 w-52 p-2 shadow"
+            className="menu menu-sm dropdown-content bg-base-300 rounded-box mt-2 w-52 px-24 shadow z-50"
+            style={{ position: 'absolute', right: 10, top: '100%' }}
           >
             <li>
               <NavLink to="/" className={({ isActive }) => getActiveClass(isActive)}>
@@ -43,32 +46,24 @@ const Navbar = () => {
               </NavLink>
             </li>
             <li>
-              <NavLink
-                to="/statistics"
-                className={({ isActive }) => getActiveClass(isActive)}
-              >
+              <NavLink to="/statistics" className={({ isActive }) => getActiveClass(isActive)}>
                 Statistics
               </NavLink>
             </li>
             <li>
-              <NavLink
-                to="/dashboard"
-                className={({ isActive }) => getActiveClass(isActive)}
-              >
+              <NavLink to="/dashboard" className={({ isActive }) => getActiveClass(isActive)}>
                 Dashboard
               </NavLink>
             </li>
             <li>
-              <NavLink
-                to="/about"
-                className={({ isActive }) => getActiveClass(isActive)}
-              >
+              <NavLink to="/about-us" className={({ isActive }) => getActiveClass(isActive)}>
                 About Us
               </NavLink>
             </li>
           </ul>
         </div>
 
+        {/* Logo */}
         <NavLink
           to="/"
           className={`btn btn-ghost text-xl ${isHome ? "text-white" : "text-black"}`}
@@ -77,6 +72,7 @@ const Navbar = () => {
         </NavLink>
       </div>
 
+      {/* Navbar Center */}
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal px-1 gap-8">
           <li>
@@ -85,39 +81,31 @@ const Navbar = () => {
             </NavLink>
           </li>
           <li>
-            <NavLink
-              to="/statistics"
-              className={({ isActive }) => getActiveClass(isActive)}
-            >
+            <NavLink to="/statistics" className={({ isActive }) => getActiveClass(isActive)}>
               Statistics
             </NavLink>
           </li>
           <li>
-            <NavLink
-              to="/dashboard"
-              className={({ isActive }) => getActiveClass(isActive)}
-            >
+            <NavLink to="/dashboard" className={({ isActive }) => getActiveClass(isActive)}>
               Dashboard
             </NavLink>
           </li>
           <li>
-            <NavLink
-              to="/about-us"
-              className={({ isActive }) => getActiveClass(isActive)}
-            >
+            <NavLink to="/about-us" className={({ isActive }) => getActiveClass(isActive)}>
               About Us
             </NavLink>
           </li>
         </ul>
       </div>
 
+      {/* Navbar End */}
       <div className="navbar-end flex items-center gap-4">
-        <div className="flex justify-center items-center cursor-pointer w-8 h-8 bg-white rounded-full border border-[#dfdfe1] hover:bg-gray-100">
+        <NavLink to="/dashboard/cart"  className="flex justify-center items-center cursor-pointer w-8 h-8 bg-white rounded-full border border-[#dfdfe1] hover:bg-gray-100">
           <IoCartOutline className="text-lg" />
-        </div>
-        <div className="flex justify-center items-center cursor-pointer w-8 h-8 bg-white rounded-full border border-[#dfdfe1] hover:bg-gray-100">
+        </NavLink>
+        <NavLink to="/dashboard/wishlist" className="flex justify-center items-center cursor-pointer w-8 h-8 bg-white rounded-full border border-[#dfdfe1] hover:bg-gray-100">
           <CiHeart className="text-lg" />
-        </div>
+        </NavLink>
       </div>
     </div>
   );

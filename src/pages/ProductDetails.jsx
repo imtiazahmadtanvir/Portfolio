@@ -1,9 +1,10 @@
-import  { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import { useLoaderData, useParams } from 'react-router-dom';
 import ReactStars from "react-rating-stars-component";
 import { BsCart3 } from "react-icons/bs";
 import { CiHeart } from "react-icons/ci";
 import { addToCart, addToWishList } from '../utilities/Data';
+import Swal from 'sweetalert2'; // Import SweetAlert
 
 const ProductDetails = () => {
     const [isAddedToWishList, setIsAddedToWishList] = useState(false);
@@ -22,13 +23,26 @@ const ProductDetails = () => {
 
     const handleAddToCart = () => {
         addToCart(id);
+        // SweetAlert for Add to Cart
+        Swal.fire({
+            title: 'Added to Cart!',
+            text: `${product_title} has been added to your cart.`,
+            icon: 'success',
+            confirmButtonText: 'OK'
+        });
     }
 
     const handleAddToWishList = () => {
         addToWishList(id);
-        setIsAddedToWishList(true);
+        setIsAddedToWishList(true); // Disable the button after adding to the wishlist
+        // SweetAlert for Add to Wishlist
+        Swal.fire({
+            title: 'Added to Wishlist!',
+            text: `${product_title} has been added to your wishlist.`,
+            icon: 'success',
+            confirmButtonText: 'OK'
+        });
     }
-
 
     return (
         <div className='bg-[#f7f7f7] pb-24'>
@@ -41,7 +55,7 @@ const ProductDetails = () => {
             {/* details div */}
             <div className="w-11/12 mx-auto flex justify-center items-center hero bg-white rounded-3xl -mt-32 p-8">
                 <div className='space-y-4 basis-[70%] w-2/5 h-full'>
-                <img  src={product_image} alt={`${product_title} image`} />
+                    <img src={product_image} alt={`${product_title} image`} />
                 </div>
                 <div className='space-y-3 basis-[70%] w-3/5'>
                     <h2 className='text-2xl font-bold'>{product_title}</h2>
@@ -70,10 +84,10 @@ const ProductDetails = () => {
                     </div>
 
                     <div className='flex items-center gap-4 pb-8'>
-                        <button onClick={() => handleAddToCart(id)} className='flex items-center btn bg-[#9538E2] text-white text-sm font-medium rounded-[32px]'>
-                            Add To Card <BsCart3 />
+                        <button onClick={handleAddToCart} className='flex items-center btn bg-[#9538E2] text-white text-sm font-medium rounded-[32px]'>
+                            Add To Cart <BsCart3 />
                         </button>
-                        <div onClick={() => handleAddToWishList(id)} className={`flex justify-center items-center hover:bg-gray-300 cursor-pointer w-12 h-12 bg-white rounded-full border border-[#dfdfe1] ${isAddedToWishList ? 'opacity-50 pointer-events-none' : ''}`}>
+                        <div onClick={handleAddToWishList} className={`flex justify-center items-center hover:bg-gray-300 cursor-pointer w-12 h-12 bg-white rounded-full border border-[#dfdfe1] ${isAddedToWishList ? 'opacity-50 pointer-events-none' : ''}`}>
                             <CiHeart className='text-3xl' />
                         </div>
                     </div>

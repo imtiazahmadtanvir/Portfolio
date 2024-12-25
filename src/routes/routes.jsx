@@ -5,11 +5,11 @@ import ErrorPage from '../pages/ErrorPage'
 import Home from '../pages/Home'
 import Statistics from '../pages/Statistics'
 import Dashboard from '../pages/Dashboard'
-import About from '../pages/About'
 import Gadgets from '../pages/Gadgets'
 import ProductDetails from '../pages/ProductDetails'
 import DeshCart from '../components/DeshCart'
 import Wishlist from '../components/Wishlist'
+import AboutUs from '../pages/AboutUs'
 
 
 const routes = createBrowserRouter([
@@ -68,8 +68,8 @@ const routes = createBrowserRouter([
         ]
       },
       {
-        path: "/about",
-        element: <About></About>,
+        path: "/about-us",
+        element: <AboutUs></AboutUs>,
         errorElement: <ErrorPage></ErrorPage>,
 
       },

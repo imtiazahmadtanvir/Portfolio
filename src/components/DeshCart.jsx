@@ -4,6 +4,7 @@ import { getToCart, removeToCart } from '../utilities/Data';
 import { TiDeleteOutline } from "react-icons/ti";
 import Modal from '../components/Modal';
 import { PiSliders } from "react-icons/pi";
+import Swal from 'sweetalert2';
 
 const DeshCart = () => {
     const [cartList, setCartList] = useState([]);
@@ -48,9 +49,17 @@ const DeshCart = () => {
         setIsPurchaseOpen(true);
     };
 
-    const handleAddToCart = (item) => { 
-        setCartList(prevCartList => [...prevCartList, item]); 
+    const handleAddToCart = (item) => {
+        setCartList(prevCartList => [...prevCartList, item]);
         setIsPurchaseOpen(false); // Re-enable the Purchase button
+
+        // Show SweetAlert success message when item is added to cart
+        Swal.fire({
+            title: 'Success!',
+            text: `${item.product_title} has been added to your cart.`,
+            icon: 'success',
+            confirmButtonText: 'OK'
+        });
     };
 
     const handleRemoveToCart = (product_id) => {
@@ -65,6 +74,9 @@ const DeshCart = () => {
             setIsPurchaseOpen(true);
         }
     };
+
+    // Fallback default image URL
+    const defaultImage = 'https://i.ibb.co.com/Z8xDhDJ/apple-iphone-15-pro-max-1.jpg'; // Set your default image path here
 
     return (
         <div className='w-11/12 2xl:w-4/5 mx-auto mt-12'>
@@ -88,20 +100,31 @@ const DeshCart = () => {
                 </div>
             </div>
 
-            <div className='mt-8 space-y-6'>
+            <div className='mt-8 space-y-6  px-4'>
                 {
                     cartList.map(cart => (
-                        <div key={cart.product_id} className='flex flex-col md:flex-row justify-between items-center gap-4 bg-white rounded-2xl'>
-                            <div className='md:w-1/5'>
-                            <img className='w-48' src={`/images/${cart.product_image.split('/').pop()}`} alt={`${cart.product_image.split('/').pop()} image`} />
+                        <div key={cart.product_id} className='flex flex-col md:flex-row px-4 py-3 justify-between items-center gap-4 bg-white rounded-2xl'>
+                            <div className='md:w-1/4'>
+                                {/* Check if the product image exists, otherwise use the default */}
+                                <img 
+                                    className='w-48'
+                                    src={cart.product_image ? `/images/${cart.product_image.split('/').pop()}` : defaultImage}
+                                    alt={cart.product_image ? `${cart.product_image.split('/').pop()} image` : 'Default product image'}
+                                />
                             </div>
-                            <div className='md:w-4/5 space-y-2 p-4 md:p-0'>
+                            <div className='md:w-4/5 ml-3 space-y-2 md:p-0'>
                                 <div className='flex justify-between text-xl font-bold'>
                                     {cart.product_title}
                                     <TiDeleteOutline onClick={() => handleRemoveToCart(cart.product_id)} className='text-red-400 text-3xl mr-16 cursor-pointer' />
                                 </div>
                                 <p className='text-sm text-[#09080F99]'>{cart.description}</p>
                                 <h4 className='font-bold'>{`Price: $${cart.price}`}</h4>
+                                <button 
+                                    onClick={() => handleAddToCart(cart)} 
+                                    className='btn btn-outline text-[#9538E2] font-semibold border border-[#9538E2] rounded-[32px]'
+                                >
+                                    Add to Cart
+                                </button>
                             </div>
                         </div>
                     ))
