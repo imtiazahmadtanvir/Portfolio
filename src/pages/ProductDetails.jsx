@@ -53,15 +53,15 @@ const ProductDetails = () => {
             </div>
 
             {/* details div */}
-            <div className="w-11/12 mx-auto flex justify-center items-center hero bg-white rounded-3xl -mt-32 p-8">
-                <div className='space-y-4 basis-[70%] w-2/5 h-full'>
+            <div className="w-11/12 mx-auto flex flex-col h lg:flex-row gap-4 md:flex-row justify-between items-center hero bg-white rounded-3xl -mt-32 p-8">
+                <div className='space-y-4 basis-[70%] w-2/5 md:mr-5 h-full'>
                     <img src={product_image} alt={`${product_title} image`} />
                 </div>
-                <div className='space-y-3 basis-[70%] w-3/5'>
-                    <h2 className='text-2xl font-bold'>{product_title}</h2>
-                    <h3 className='text-lg font-semibold text-[#09080FCC]'>Price: ${price}</h3>
-                    <button className="btn btn-sm btn-outline bg-[#309C081A] text-[#309C08] text-sm font-medium rounded-[32px]">{availability === true ? "In Stock" : "Out Of Stock"}</button>
-                    <p className='text-[#09080F99]'>{description}</p>
+                <div className='space-y-3 basis-[70%] w-3/5 '>
+                    <h2 className='text-2xl font-bold lg:text-left md:text-left text-center'>{product_title}</h2>
+                    <h3 className='text-lg font-semibold lg:text-left md:text-left text-center text-[#09080FCC] '>Price: ${price}</h3>
+                    <button className="btn btn-sm btn-outline bg-[#309C081A] text-[#309C08] text-sm font-medium rounded-[32px] lg:w-1/6  w-full">{availability === true ? "In Stock" : "Out Of Stock"}</button>
+                    <p className='text-[#09080F99] lg:text-left md:text-left text-center'>{description}</p>
                     <p className='font-bold'>Specification:</p>
                     <ul className='pl-4'>
                         {
@@ -70,7 +70,7 @@ const ProductDetails = () => {
                             ))
                         }
                     </ul>
-                    <p className='font-bold'>Rating ⭐ :</p>
+                    <p className='font-bold'>Rating ⭐: </p>
                     <div className='flex items-center gap-3'>
                         <ReactStars
                             count={5}

@@ -76,7 +76,7 @@ const DeshCart = () => {
     };
 
     // Fallback default image URL
-    const defaultImage = 'https://i.ibb.co.com/Z8xDhDJ/apple-iphone-15-pro-max-1.jpg'; // Set your default image path here
+    // const defaultImage = 'https://i.ibb.co.com/Z8xDhDJ/apple-iphone-15-pro-max-1.jpg'; // Set your default image path here
 
     return (
         <div className='w-11/12 2xl:w-4/5 mx-auto mt-12'>
@@ -106,10 +106,11 @@ const DeshCart = () => {
                         <div key={cart.product_id} className='flex flex-col md:flex-row px-4 py-3 justify-between items-center gap-4 bg-white rounded-2xl'>
                             <div className='md:w-1/4'>
                                 {/* Check if the product image exists, otherwise use the default */}
-                                <img 
-                                    className='w-48'
-                                    src={cart.product_image ? `/images/${cart.product_image.split('/').pop()}` : defaultImage}
-                                    alt={cart.product_image ? `${cart.product_image.split('/').pop()} image` : 'Default product image'}
+                                                    
+                                <img
+                                 className='w-40'
+                                 src={cart.product_image}
+                                 alt={cart.product_title}  
                                 />
                             </div>
                             <div className='md:w-4/5 ml-3 space-y-2 md:p-0'>

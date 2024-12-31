@@ -19,7 +19,7 @@
     {
         "product_id": "2",
         "product_title": "Samsung Galaxy S23 Ultra",
-        "product_image": "https://i.ibb.co.com/Z8xDhDJ/apple-iphone-15-pro-max-1.jpg",
+        "product_image": "https://i.ibb.co.com/h776439/samsung-galaxy-s23-ultra-1.jpg",
         "category": "Phones",
         "price": 1199,
         "description": "Samsung Galaxy S23 Ultra with high-end camera and storage options.",
@@ -36,7 +36,7 @@
     {
         "product_id": "3",
         "product_title": "Google Pixel 8 Pro",
-        "product_image": "https://i.ibb.co.com/Z8xDhDJ/apple-iphone-15-pro-max-1.jpg",
+        "product_image": "https://i.ibb.co.com/tp6hvW9/images-10.jpg",
         "category": "Phones",
         "price": 999,
         "description": "Google Pixel 8 Pro with advanced AI camera features.",
@@ -53,7 +53,7 @@
     {
         "product_id": "4",
         "product_title": "Apple MacBook Pro 14",
-        "product_image": "https://i.ibb.co.com/Z8xDhDJ/apple-iphone-15-pro-max-1.jpg",
+        "product_image": "https://i.ibb.co.com/rtDbDHd/macbook-pro-14-and-16-overview-fz0lron5xyuu-og.png",
         "category": "Laptops",
         "price": 1999,
         "description": "Apple MacBook Pro 14 with M2 Pro chip for professionals.",
@@ -70,7 +70,7 @@
     {
         "product_id": "5",
         "product_title": "Dell XPS 13",
-        "product_image": "https://i.ibb.co.com/Z8xDhDJ/apple-iphone-15-pro-max-1.jpg",
+        "product_image": "https://i.ibb.co.com/KsRSfj6/069-UTjb-Wv2wmod-Uc4-EN400x-27.webp",
         "category": "Laptops",
         "price": 1299,
         "description": "Dell XPS 13 with compact design and high performance.",
@@ -87,7 +87,7 @@
     {
         "product_id": "6",
         "product_title": "Microsoft Surface Laptop 5",
-        "product_image": "https://i.ibb.co.com/Z8xDhDJ/apple-iphone-15-pro-max-1.jpg",
+        "product_image": "https://i.ibb.co.com/0jpgm51/microsoft-surface-laptop-5-intel-core-i7-1265u-11697279015.webp",
         "category": "Laptops",
         "price": 1499,
         "description": "Microsoft Surface Laptop 5 with touch screen and sleek design.",
@@ -104,7 +104,7 @@
     {
         "product_id": "7",
         "product_title": "Apple iPad Pro 12.9",
-        "product_image": "https://i.ibb.co.com/Z8xDhDJ/apple-iphone-15-pro-max-1.jpg",
+        "product_image": "https://i.ibb.co.com/vLZBzxs/images-11.jpg",
         "category": "Tablets",
         "price": 1099,
         "description": "Apple iPad Pro with M2 chip for creative professionals.",
@@ -121,7 +121,7 @@
     {
         "product_id": "8",
         "product_title": "Samsung Galaxy Tab S9 Ultra",
-        "product_image": "https://i.ibb.co.com/Z8xDhDJ/apple-iphone-15-pro-max-1.jpg",
+        "product_image": "https://i.ibb.co.com/ZNR8XRw/71k-WQWfm-YFL-AC-UF1000-1000-QL80.jpg",
         "category": "Tablets",
         "price": 999,
         "description": "Samsung Galaxy Tab S9 Ultra with massive display and performance.",
@@ -138,7 +138,7 @@
     {
         "product_id": "9",
         "product_title": "Lenovo Tab P11 Pro",
-        "product_image": "https://i.ibb.co.com/Z8xDhDJ/apple-iphone-15-pro-max-1.jpg",
+        "product_image": "https://i.ibb.co.com/nrGbRsY/lenovo-tab-p11-pro-subseries-gallery-7.jpg",
         "category": "Tablets",
         "price": 599,
         "description": "Lenovo Tab P11 Pro with OLED display for enhanced viewing experience.",
@@ -155,7 +155,7 @@
     {
         "product_id": "10",
         "product_title": "Sony WH-1000XM5",
-        "product_image": "https://i.ibb.co.com/Z8xDhDJ/apple-iphone-15-pro-max-1.jpg",
+        "product_image": "https://i.ibb.co.com/sqD4r0w/Sony-WH-1000-XM5-Wireless-Over-ear-Industry-Leading-Noise-Canceling-Headphones-with-Microphone.webp",
         "category": "Headphones",
         "price": 399,
         "description": "Sony WH-1000XM5 with industry-leading noise cancellation.",
@@ -171,7 +171,7 @@
     {
         "product_id": "11",
         "product_title": "Bose QuietComfort Earbuds II",
-        "product_image": "https://i.ibb.co.com/Z8xDhDJ/apple-iphone-15-pro-max-1.jpg",
+        "product_image": "https://i.ibb.co.com/WccHdhM/design-medium.jpg",
         "category": "Headphones",
         "price": 299,
         "description": "Bose QuietComfort Earbuds II with immersive sound and comfortable fit.",
@@ -187,7 +187,7 @@
     {
         "product_id": "12",
         "product_title": "Apple AirPods Max",
-        "product_image": "https://i.ibb.co.com/Z8xDhDJ/apple-iphone-15-pro-max-1.jpg",
+        "product_image": "https://i.ibb.co.com/GRkr2kn/81-Ya-YTFNB3-L-AC-SL1500.jpg",
         "category": "Headphones",
         "price": 549,
         "description": "Apple AirPods Max with spatial audio and adaptive EQ.",
@@ -203,7 +203,7 @@
     {
         "product_id": "13",
         "product_title": "Apple Watch Series 9",
-        "product_image": "https://i.ibb.co.com/Z8xDhDJ/apple-iphone-15-pro-max-1.jpg",
+        "product_image": "https://i.ibb.co.com/68jjx89/Apple-Watch-S9-Si-P-230912-jpg-large-2x.jpg",
         "category": "Wearables",
         "price": 399,
         "description": "Apple Watch Series 9 with enhanced health and fitness tracking.",
@@ -220,7 +220,7 @@
     {
         "product_id": "14",
         "product_title": "Fitbit Versa 4",
-        "product_image": "https://i.ibb.co.com/Z8xDhDJ/apple-iphone-15-pro-max-1.jpg",
+        "product_image": "https://i.ibb.co.com/51n88WK/Versa-4-Black-9834.jpg",
         "category": "Wearables",
         "price": 229,
         "description": "Fitbit Versa 4 with comprehensive fitness tracking features.",
@@ -237,7 +237,7 @@
     {
         "product_id": "15",
         "product_title": "Samsung Galaxy Watch 6",
-        "product_image": "https://i.ibb.co.com/Z8xDhDJ/apple-iphone-15-pro-max-1.jpg",
+        "product_image": "https://i.ibb.co.com/WkqCDDF/galaxy-watch6-classic-kv-pc.jpg",
         "category": "Wearables",
         "price": 279,
         "description": "Samsung Galaxy Watch 6 with advanced health monitoring.",
@@ -254,7 +254,7 @@
     {
         "product_id": "16",
         "product_title": "OnePlus 11 Pro",
-        "product_image": "https://i.ibb.co.com/Z8xDhDJ/apple-iphone-15-pro-max-1.jpg",
+        "product_image": "https://i.ibb.co.com/YT838v0/maxresdefault.jpg",
         "category": "Phones",
         "price": 899,
         "description": "OnePlus 11 Pro with flagship performance and Hasselblad camera.",
@@ -271,7 +271,7 @@
     {
         "product_id": "17",
         "product_title": "Xiaomi 13 Ultra",
-        "product_image": "https://i.ibb.co.com/Z8xDhDJ/apple-iphone-15-pro-max-1.jpg",
+        "product_image": "https://i.ibb.co.com/gPdM3Kc/Xiaomi-13-Ultra-Orange.jpg",
         "category": "Phones",
         "price": 799,
         "description": "Xiaomi 13 Ultra with Leica-tuned camera and powerful performance.",
@@ -288,7 +288,7 @@
     {
         "product_id": "18",
         "product_title": "iPhone 13 Pro Max",
-        "product_image": "https://i.ibb.co.com/Z8xDhDJ/apple-iphone-15-pro-max-1.jpg",
+        "product_image": "https://i.ibb.co.com/N7YB2jD/651cadea2f64b307cb169d6e-apple-iphone-13-pro-max-256gb.jpg",
         "category": "Phones",
         "price": 999,
         "description": "iPhone 13 Pro Max with 4K display and advanced photography features.",
