@@ -1,113 +1,100 @@
-import { NavLink, useLocation } from "react-router-dom";
-import { IoCartOutline } from "react-icons/io5";
-import { CiHeart } from "react-icons/ci";
+import { FaBars, FaTimes } from "react-icons/fa";
+import { useState } from "react";
+import { motion } from "framer-motion";
+import cvFile from "../assets/Image/cv.pdf";
+import { AiOutlineDownload } from "react-icons/ai";
 
 const Navbar = () => {
-  const location = useLocation();
-  const isHome = location.pathname === "/" || location.pathname.startsWith("/home");
+  const [menuOpen, setMenuOpen] = useState(false);
 
-  const getActiveClass = (isActive) =>
-    isActive
-      ? "text-[#9538E2] bg-white underline underline-offset-4"
-      : isHome
-      ? "text-white"
-      : "text-black";
+  const toggleMenu = () => {
+    setMenuOpen(!menuOpen);
+  };
 
   return (
-    <div className="lg:w-9/12 w-10/12 mx-auto navbar top-0 z-50 overflow-visible">
-      {/* Navbar Start */}
-      <div className="navbar-start">
-        {/* Mobile Dropdown Menu */}
-        <div className="dropdown relative">
-          <button tabIndex={0} className="btn btn-ghost lg:hidden">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              className="h-5 w-5"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth="2"
-                d="M4 6h16M4 12h8m-8 6h16"
-              />
-            </svg>
-          </button>
-          <ul
-            tabIndex={0}
-            className="menu menu-sm dropdown-content bg-base-300 rounded-box mt-2 w-52 px-24 shadow z-50"
-            style={{ position: 'absolute', right: 10, top: '100%' }}
-          >
-            <li>
-              <NavLink to="/" className={({ isActive }) => getActiveClass(isActive)}>
-                Home
-              </NavLink>
-            </li>
-            <li>
-              <NavLink to="/statistics" className={({ isActive }) => getActiveClass(isActive)}>
-                Statistics
-              </NavLink>
-            </li>
-            <li>
-              <NavLink to="/dashboard" className={({ isActive }) => getActiveClass(isActive)}>
-                Dashboard
-              </NavLink>
-            </li>
-            <li>
-              <NavLink to="/about-us" className={({ isActive }) => getActiveClass(isActive)}>
-                About Us
-              </NavLink>
-            </li>
-          </ul>
-        </div>
-
+    <motion.nav
+      className="top-0 bg-gradient-to-r from-black via-gray-900 to-black text-white py-4 px-5 lg:px-12 lg:py-2 z-50 shadow-lg"
+      initial={{ y: -80 }}
+      animate={{ y: 0 }}
+      transition={{ duration: 0.8 }}
+    >
+      <div className="md:px-4 flex justify-between items-center">
         {/* Logo */}
-        <NavLink
-          to="/"
-          className={`btn btn-ghost text-xl ${isHome ? "text-white" : "text-black"}`}
+        <motion.div
+          className="text-3xl font-bold text-green-500 hover:text-green-400 cursor-pointer"
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 1 }}
         >
-          Gadget Heaven
-        </NavLink>
-      </div>
+          Imtiaz.
+        </motion.div>
 
-      {/* Navbar Center */}
-      <div className="navbar-center hidden lg:flex">
-        <ul className="menu menu-horizontal px-1 gap-8">
-          <li>
-            <NavLink to="/" className={({ isActive }) => getActiveClass(isActive)}>
-              Home
-            </NavLink>
-          </li>
-          <li>
-            <NavLink to="/statistics" className={({ isActive }) => getActiveClass(isActive)}>
-              Statistics
-            </NavLink>
-          </li>
-          <li>
-            <NavLink to="/dashboard" className={({ isActive }) => getActiveClass(isActive)}>
-              Dashboard
-            </NavLink>
-          </li>
-          <li>
-            <NavLink to="/about-us" className={({ isActive }) => getActiveClass(isActive)}>
-              About Us
-            </NavLink>
-          </li>
+        {/* Menu Icon for Mobile */}
+        <motion.div
+          className="lg:hidden text-2xl cursor-pointer"
+          onClick={toggleMenu}
+          whileTap={{ scale: 0.9 }}
+        >
+          {menuOpen ? <FaTimes /> : <FaBars />}
+        </motion.div>
+
+        {/* Menu */}
+        <ul
+          className={`flex flex-col lg:flex-row lg:space-x-8 lg:justify-center lg:static absolute top-16 left-0 w-full bg-black lg:bg-transparent transition-all ${
+            menuOpen ? "block" : "hidden lg:flex"
+          }`}
+        >
+          <motion.li
+            className="px-4 py-2 text-lg hover:text-green-400 cursor-pointer text-center lg:text-left"
+            whileHover={{ scale: 1.1, color: "#22c55e" }}
+            whileTap={{ scale: 0.9 }}
+          >
+            <a href="">Home</a>
+          </motion.li>
+          <motion.li
+            className="px-4 py-2 text-lg hover:text-green-400 cursor-pointer text-center lg:text-left"
+            whileHover={{ scale: 1.1, color: "#22c55e" }}
+            whileTap={{ scale: 0.9 }}
+          >
+            <a href="#about">About</a>
+          </motion.li>
+          <motion.li
+            className="px-4 py-2 text-lg hover:text-green-400 cursor-pointer text-center lg:text-left"
+            whileHover={{ scale: 1.1, color: "#22c55e" }}
+            whileTap={{ scale: 0.9 }}
+          >
+            <a href="#skills">Skills</a>
+          </motion.li>
+          <motion.li
+            className="px-4 py-2 text-lg hover:text-green-400 cursor-pointer text-center lg:text-left"
+            whileHover={{ scale: 1.1, color: "#22c55e" }}
+            whileTap={{ scale: 0.9 }}
+          >
+            <a href="#projects">Projects</a>
+          </motion.li>
+          <motion.li
+            className="px-4 py-2 text-lg hover:text-green-400 cursor-pointer text-center lg:text-left"
+            whileHover={{ scale: 1.1, color: "#22c55e" }}
+            whileTap={{ scale: 0.9 }}
+          >
+            <a href="#contact">Contact</a>
+          </motion.li>
         </ul>
-      </div>
 
-      {/* Navbar End */}
-      <div className="navbar-end flex items-center gap-4">
-        <NavLink to="/dashboard/cart"  className="flex justify-center items-center cursor-pointer w-8 h-8 bg-white rounded-full border border-[#dfdfe1] hover:bg-gray-100">
-          <IoCartOutline className="text-lg" />
-        </NavLink>
-        <NavLink to="/dashboard/wishlist" className="flex justify-center items-center cursor-pointer w-8 h-8 bg-white rounded-full border border-[#dfdfe1] hover:bg-gray-100">
-          <CiHeart className="text-lg" />
-        </NavLink>
+
+          <motion.a
+            // <AiOutlineDownload className="mr-2" />
+          
+             href={cvFile} 
+            download="Imtiaz_Tanvir_CV.pdf"
+            className="hidden  lg:inline-block bg-green-500 text-black px-10 py-2 rounded-full shadow-lg hover:bg-gray-600 hover:text-white transition-transform"
+            whileHover={{ scale: 1.1 }}
+            whileTap={{ scale: 0.95 }}
+          >
+         Resume  <AiOutlineDownload className="mx-auto " />
+          </motion.a>
       </div>
-    </div>
+    </motion.nav>
   );
 };
 

@@ -1,39 +1,53 @@
+import { motion } from "framer-motion";
+import { FaLinkedin, FaGithub, FaFacebook } from "react-icons/fa"; // Importing the icons
 
 const Footer = () => {
-    return (
-        <footer className='pb-10'>
-            <div className='w-11/12 mx-auto mt-20'>
-                <div>
-                    <h2 className='text-3xl font-bold text-center'>Gadget Heaven</h2>
-                    <p className='text-[#09080F99] text-center mt-3'>Leading the way in cutting-edge technology and innovation.</p>
-                </div>
+  return (
+    <div className="bg-gray-800 text-gray-300 py-8">
+      <div className="max-w-screen-lg mx-auto text-center">
+        <motion.p
+          className="text-sm lg:text-base mb-2"
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 1 }}
+        >
+          &copy; 2025 Imtiaz Ahmad Tanvir. All rights reserved.
+        </motion.p>
 
-                <div className='divider'></div>
-
-                <div className='flex justify-between md:w-1/2 mx-auto'>
-                    <nav className='flex flex-col text-[#09080F99]'>
-                        <h6 className="text-[#09080F] text-lg font-bold">Services</h6>
-                        <a className="link link-hover text-sm pt-2">Product Support</a>
-                        <a className="link link-hover text-sm pt-2">Order Tracking</a>
-                        <a className="link link-hover text-sm pt-2">Shipping & Delivery</a>
-                        <a className="link link-hover text-sm pt-2">Returns</a>
-                    </nav>
-                    <nav className='flex flex-col text-[#09080F99]'>
-                        <h6 className="text-[#09080F] text-lg font-bold">Company</h6>
-                        <a className="link link-hover text-sm pt-2">About us</a>
-                        <a className="link link-hover text-sm pt-2">Careers</a>
-                        <a className="link link-hover text-sm pt-2">Contact</a>
-                    </nav>
-                    <nav className='flex flex-col text-[#09080F99]'>
-                        <h6 className="text-[#09080F] text-lg font-bold">Legal</h6>
-                        <a className="link link-hover text-sm pt-2">Terms of Service</a>
-                        <a className="link link-hover text-sm pt-2">Privacy policy</a>
-                        <a className="link link-hover text-sm pt-2">Cookie Policy</a>
-                    </nav>
-                </div>
-            </div>
-        </footer>
-    );
+        <motion.div
+          className="flex justify-center space-x-6 mb-4"
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 1, delay: 0.5 }}
+        >
+          <a
+            href="https://www.linkedin.com/in/imtiaz-tanveer07" // Your LinkedIn profile
+            className="text-green-500 hover:text-green-300"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FaLinkedin size={24} />
+          </a>
+          <a
+            href="https://github.com/imtiazahmadtanvir" // Your GitHub profile
+            className="text-green-500 hover:text-green-300"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FaGithub size={24} />
+          </a>
+          <a
+            href="https://www.facebook.com/imtiazahmadtanveer07/" // Your Facebook profile
+            className="text-green-500 hover:text-green-300"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FaFacebook size={24} />
+          </a>
+        </motion.div>
+      </div>
+    </div>
+  );
 };
 
 export default Footer;
