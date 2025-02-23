@@ -5,7 +5,7 @@ import profile from "../assets/Image/imtiaz.jpg";
 import { motion } from "framer-motion";
 
 // Import the CV PDF file
-import cvFile from "../assets/Image/cv.pdf";
+import cvFile from "../assets/Image/Resume.pdf";
 
 const Banner = () => {
   return (
@@ -50,7 +50,7 @@ const Banner = () => {
           >
             <AiOutlineDownload className="mr-2" />
             {/* Download CV Button */}
-            <a href={cvFile} download="Imtiaz_Tanvir_CV.pdf">
+            <a href={cvFile} download="Imtiaz_Tanvir_Resume.pdf">
               Download CV
             </a>
           </motion.button>
