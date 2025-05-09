@@ -1,7 +1,7 @@
 import { FaBars, FaTimes } from "react-icons/fa";
 import { useState } from "react";
 import { motion } from "framer-motion";
-import cvFile from "../assets/Image/cv.pdf";
+import cvFile from "../assets/Image/Resume.pdf";
 import { AiOutlineDownload } from "react-icons/ai";
 
 const Navbar = () => {

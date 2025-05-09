@@ -1,4 +1,4 @@
-/* eslint-disable no-undef */
+/* eslint-disable react/no-unescaped-entities */
 import { FaLinkedin, FaGithub, FaFacebook } from "react-icons/fa";
 import { AiOutlineDownload } from "react-icons/ai";
 import profile from "../assets/Image/imtiaz.jpg";
