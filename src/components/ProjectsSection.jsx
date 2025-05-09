@@ -1,127 +1,237 @@
-import { motion } from "framer-motion";
-import image1 from "../assets/Image/vocal.png";
-import image2 from "../assets/Image/history.png";
-import image3 from "../assets/Image/visa.png"; // Replace with actual Visa Navigator image
+"use client"
 
-const projects = [
-  {
-    name: "Lingo Bingo",
-    image: image1,
-    description:
-      "A fun and interactive language learning app designed to improve vocabulary through quizzes, real-time tracking, and personalized lessons.",
-    technologies: ["React", "Firebase", "Tailwind CSS"],
-    liveLink: "https://lingo-bingo-56adb.web.app/",
-    githubLink: "https://github.com/imtiazahmadtanvir/Bingo_Vocabulary_Learing_Application",
-    challenges: "Implementing dynamic lessons and real-time user progress tracking.",
-    improvements: "Adding AI-based personalized lesson recommendations.",
-    features: [
-      "Interactive quizzes",
-      "Real-time progress tracking",
-      "Customizable lesson plans",
-    ],
-  },
-  {
-    name: "Historical Artifacts Tracker",
-    image: image2,
-    description:
-      "An application that helps users track historical artifacts with cataloging, search, filtering capabilities, and user authentication for secure access.",
-    technologies: ["Node.js", "MongoDB", "Express"],
-    liveLink: "https://historical-artifacts-tra-5ef99.web.app/",
-    githubLink: "https://github.com/imtiazahmadtanvir/Historical-Artifacts-Tracker-Web",
-    challenges: "Efficient search and filter for large datasets.",
-    improvements: "Enhancing search performance with indexing.",
-    features: [
-      "Artifact cataloging",
-      "Search and filter capabilities",
-      "User authentication",
-    ],
-  },
-  {
-    name: "Visa Navigator",
-    image: image3, // Update the image here to reflect the Visa Navigator project
-    description:
-      "A platform designed to streamline the visa application process, allowing users to check visa requirements, apply for visas online, and track application statuses.",
-    technologies: ["React", "Node.js", "MongoDB", "Express", "Firebase"],
-    liveLink: "https://visa-navigator-client-67a8d.web.app/",
-    githubLink: "https://github.com/imtiazahmadtanvir/Visa_Navigator_Website",
-    challenges: "Handling multiple visa requirements and application data.",
-    improvements: "Integrating AI for personalized visa recommendations.",
-    features: [
-      "Visa requirements check",
-      "Visa application and tracking",
-      "User authentication and role management",
-    ],
-  },
-];
+import { motion, useInView, AnimatePresence } from "framer-motion"
+import { useRef, useState } from "react"
+import { FaGithub, FaExternalLinkAlt, FaReact, FaNodeJs } from "react-icons/fa"
+import { SiMongodb, SiExpress, SiFirebase, SiNextdotjs } from "react-icons/si"
 
 const ProjectsSection = () => {
+  const ref = useRef(null)
+  const isInView = useInView(ref, { once: false, amount: 0.1 })
+  const [activeFilter, setActiveFilter] = useState("all")
+
+  const projects = [
+    {
+      name: "AgriTech – AI-Powered Platform",
+      image: "/src/assets/Image/agri.png",
+      description:
+        "A smart agriculture web app offering AI-driven tools for crop recommendations, disease detection, and farming support.",
+      technologies: ["React", "Next.js", "Node.js", "MongoDB", "AI Integration"],
+      category: "frontend",
+      liveLink: "https://agri-tech-vefb.vercel.app",
+      githubLink: "https://github.com/imtiazahmadtanvir/agri-tech",
+      features: [
+        "Developed AI Chatbot using Gemini API with responsive chat UI",
+        "Created key UI components: Footer, Partner, Category, and Blog sections",
+        "Implemented community features: Farmer Forum, Local Events, and Q&A Forum",
+      ],
+      icons: [<FaReact key="react" />, <SiNextdotjs key="next" />, <FaNodeJs key="node" />, <SiMongodb key="mongo" />],
+    },
+    {
+      name: "Visa Navigator Portal",
+      image: "/src/assets/Image/visa.png",
+      description: "A user-friendly portal for checking visa requirements and tracking visa applications.",
+      technologies: ["React", "Node.js", "MongoDB", "Express", "Firebase"],
+      category: "fullstack",
+      liveLink: "https://visa-navigator-client-67a8d.web.app/",
+      githubLink: "https://github.com/imtiazahmadtanvir/Visa_Navigator_Website",
+      features: [
+        "Dynamic UI with Firebase authentication",
+        "Visa data management with MongoDB integration",
+        "Role-based access for applicants and administrators",
+      ],
+      icons: [
+        <FaReact key="react" />,
+        <FaNodeJs key="node" />,
+        <SiMongodb key="mongo" />,
+        <SiExpress key="express" />,
+        <SiFirebase key="firebase" />,
+      ],
+    },
+    {
+      name: "Historical-Artifacts",
+      image: "/src/assets/Image/history.png",
+      description:
+        "A MERN stack product discovery platform where users can submit, upvote/downvote, review, and subscribe to premium features.",
+      technologies: ["React", "Node.js", "MongoDB", "Express"],
+      category: "fullstack",
+      liveLink: "https://historical-artifacts-tra-5ef99.web.app/",
+      githubLink: "https://github.com/imtiazahmadtanvir/Historical-Artifacts-Tracker-Web",
+      features: [
+        "User authentication with Firebase & JWT)",
+        "Pre-filled update form with all artifact fields",
+        "Browse, add, update, and delete historical artifacts",
+      ],
+      icons: [<FaReact key="react" />, <FaNodeJs key="node" />, <SiMongodb key="mongo" />, <SiExpress key="express" />],
+    },
+    //  {
+    //   name: "Product Hunt",
+    //   image: "/src/assets/Image/product-hunt.png",
+    //   description:
+    //     "A MERN stack product discovery platform where users can submit, upvote/downvote, review, and subscribe to premium features.",
+    //   technologies: ["React", "Node.js", "MongoDB", "Express"],
+    //   category: "fullstack",
+    //   liveLink: "https://historical-artifacts-tra-5ef99.web.app/",
+    //   githubLink: "https://github.com/imtiazahmadtanvir/Historical-Artifacts-Tracker-Web",
+    //   features: [
+    //     "Authentication with user roles (admin, moderator, user)",
+    //     "Upvote/downvote system with real-time updates",
+    //     "Payment integration for premium features",
+    //   ],
+    //   icons: [<FaReact key="react" />, <FaNodeJs key="node" />, <SiMongodb key="mongo" />, <SiExpress key="express" />],
+    // },
+    
+  ]
+
+  const filteredProjects =
+    activeFilter === "all" ? projects : projects.filter((project) => project.category === activeFilter)
+
+  const filterCategories = [
+    { name: "All", value: "all" },
+    { name: "Frontend", value: "frontend" },
+    { name: "Fullstack", value: "fullstack" },
+  ]
+
   return (
-    <div id="projects" className="bg-gradient-to-r from-gray-900 via-black to-gray-900 text-white py-16">
-      <div className="px-8 lg:w-10/12 mx-auto text-center">
+    <div ref={ref} className="py-16 md:py-24 overflow-hidden bg-black">
+      <div className="px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
         <motion.h2
-          className="text-4xl lg:text-5xl font-bold mb-12"
-          initial={{ opacity: 0, y: -50 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 1 }}
+          className="text-3xl md:text-4xl lg:text-5xl font-bold text-center mb-6 md:mb-8 text-white"
+          initial={{ opacity: 0, y: -30 }}
+          animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: -30 }}
+          transition={{ duration: 0.8 }}
         >
-          Projects
+          My <span className="text-red-500">Projects</span>
         </motion.h2>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
-          {projects.map((project, index) => (
-            <motion.div
+        {/* Filter Buttons */}
+        <motion.div
+          className="flex flex-wrap justify-center gap-3 mb-8 md:mb-12"
+          initial={{ opacity: 0, y: 20 }}
+          animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
+          transition={{ duration: 0.6 }}
+        >
+          {filterCategories.map((category, index) => (
+            <motion.button
               key={index}
-              className="bg-gray-800 p-6 rounded-xl shadow-lg"
-              initial={{ opacity: 0, y: 30 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 1, delay: index * 0.2 }}
-              whileHover={{
-                scale: 1.05,
-                transition: { duration: 0.3 },
-              }}
+              onClick={() => setActiveFilter(category.value)}
+              className={`px-5 py-1.5 rounded-full text-sm font-medium transition-all duration-300 ${
+                activeFilter === category.value
+                  ? "bg-red-500 text-white"
+                  : "bg-gray-900 text-gray-300 hover:bg-gray-800"
+              }`}
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
             >
-              <img
-                src={project.image}
-                alt={`${project.name} Image`}
-                className="w-full h-48 object-cover rounded-md mb-4"
-              />
-              <h3 className="text-2xl font-semibold mb-4">{project.name}</h3>
-              <p className="text-left px-2 mx-auto text-gray-300 mb-4">{project.description}</p>
-
-              <ul className="text-left ml-8 list-disc list-inside text-gray-300 mb-4">
-                {project.features.map((feature, index) => (
-                  <li key={index}>{feature}</li>
-                ))}
-              </ul>
-
-              <div className="flex justify-between mx-auto">
-                <div>
-                  <motion.button
-                    className="bg-green-500 text-white px-4 py-2 rounded-md mt-2"
-                    onClick={() => window.open(project.liveLink, "_blank")}
-                    whileHover={{ scale: 1.1 }}
-                    transition={{ duration: 0.2 }}
-                  >
-                    Visit Website
-                  </motion.button>
-                </div>
-                <div>
-                  <motion.button
-                    className="bg-green-500 text-white px-4 py-2 rounded-md mt-2"
-                    onClick={() => window.open(project.githubLink, "_blank")}
-                    whileHover={{ scale: 1.1 }}
-                    transition={{ duration: 0.2 }}
-                  >
-                    View on GitHub
-                  </motion.button>
-                </div>
-              </div>
-            </motion.div>
+              {category.name}
+            </motion.button>
           ))}
+        </motion.div>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6 md:gap-8">
+          <AnimatePresence mode="wait">
+            {filteredProjects.map((project, index) => (
+              <motion.div
+                key={project.name}
+                layout
+                initial={{ opacity: 0, y: 50 }}
+                animate={{ opacity: 1, y: 0 }}
+                exit={{ opacity: 0, scale: 0.9 }}
+                transition={{ duration: 0.5, delay: index * 0.1 }}
+                className="group bg-gray-900 rounded-xl overflow-hidden shadow-lg border border-gray-800 hover:border-red-900 transition-all duration-300 flex flex-col h-full"
+                whileHover={{
+                  y: -8,
+                  boxShadow: "0 15px 30px -10px rgba(0, 0, 0, 0.3)",
+                }}
+              >
+                {/* Project Image with Overlay */}
+                <div className="relative overflow-hidden h-48 sm:h-52">
+                  <motion.img
+                    src={project.image}
+                    alt={`${project.name} Image`}
+                    className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end justify-center p-4">
+                    <div className="flex gap-4">
+                      <motion.a
+                        href={project.liveLink}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="bg-red-500 text-white p-2 rounded-full"
+                        whileHover={{ scale: 1.1 }}
+                        whileTap={{ scale: 0.9 }}
+                      >
+                        <FaExternalLinkAlt size={18} />
+                      </motion.a>
+                      <motion.a
+                        href={project.githubLink}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="bg-gray-800 text-white p-2 rounded-full"
+                        whileHover={{ scale: 1.1 }}
+                        whileTap={{ scale: 0.9 }}
+                      >
+                        <FaGithub size={18} />
+                      </motion.a>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Project Content */}
+                <div className="p-5 flex flex-col flex-grow">
+                  <h3 className="text-xl font-semibold mb-2 text-white line-clamp-1">{project.name}</h3>
+                  <p className="text-gray-400 text-sm mb-3 line-clamp-2">{project.description}</p>
+
+                  {/* Features */}
+                  <ul className="mb-3 space-y-1 flex-grow">
+                    {project.features.map((feature, idx) => (
+                      <li key={idx} className="flex items-start text-sm">
+                        <span className="text-red-500 mr-2 flex-shrink-0">•</span>
+                        <span className="text-gray-400 line-clamp-1">{feature}</span>
+                      </li>
+                    ))}
+                  </ul>
+
+                  {/* Technology Icons */}
+                  <div className="flex flex-wrap gap-3 mb-4">
+                    {project.icons.map((icon, idx) => (
+                      <div key={idx} className="text-gray-400 text-lg">
+                        {icon}
+                      </div>
+                    ))}
+                  </div>
+
+                  {/* Buttons */}
+                  <div className="flex gap-3 mt-auto">
+                    <motion.a
+                      href={project.liveLink}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex-1 bg-red-500 text-white py-1.5 rounded-md text-center font-medium text-sm transition-colors hover:bg-red-600"
+                      whileHover={{ scale: 1.03 }}
+                      whileTap={{ scale: 0.97 }}
+                    >
+                      Live Demo
+                    </motion.a>
+                    <motion.a
+                      href={project.githubLink}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex-1 bg-gray-800 text-white py-1.5 rounded-md text-center font-medium text-sm transition-colors hover:bg-gray-700"
+                      whileHover={{ scale: 1.03 }}
+                      whileTap={{ scale: 0.97 }}
+                    >
+                      GitHub
+                    </motion.a>
+                  </div>
+                </div>
+              </motion.div>
+            ))}
+          </AnimatePresence>
         </div>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default ProjectsSection;
+export default ProjectsSection
