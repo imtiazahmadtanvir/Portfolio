@@ -4,6 +4,9 @@ import { motion, useInView, AnimatePresence } from "framer-motion"
 import { useRef, useState } from "react"
 import { FaGithub, FaExternalLinkAlt, FaReact, FaNodeJs } from "react-icons/fa"
 import { SiMongodb, SiExpress, SiFirebase, SiNextdotjs } from "react-icons/si"
+import image1 from "../assets/Image/agri.png";
+import image3 from "../assets/Image/history.png";
+import image2 from "../assets/Image/visa.png"; 
 
 const ProjectsSection = () => {
   const ref = useRef(null)
@@ -13,7 +16,7 @@ const ProjectsSection = () => {
   const projects = [
     {
       name: "AgriTech – AI-Powered Platform",
-      image: "/src/assets/Image/agri.png",
+      image: image1,
       description:
         "A smart agriculture web app offering AI-driven tools for crop recommendations, disease detection, and farming support.",
       technologies: ["React", "Next.js", "Node.js", "MongoDB", "AI Integration"],
@@ -29,7 +32,7 @@ const ProjectsSection = () => {
     },
     {
       name: "Visa Navigator Portal",
-      image: "/src/assets/Image/visa.png",
+      image: image2,
       description: "A user-friendly portal for checking visa requirements and tracking visa applications.",
       technologies: ["React", "Node.js", "MongoDB", "Express", "Firebase"],
       category: "fullstack",
@@ -50,7 +53,7 @@ const ProjectsSection = () => {
     },
     {
       name: "Historical-Artifacts",
-      image: "/src/assets/Image/history.png",
+      image: image3,
       description:
         "A MERN stack product discovery platform where users can submit, upvote/downvote, review, and subscribe to premium features.",
       technologies: ["React", "Node.js", "MongoDB", "Express"],

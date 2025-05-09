@@ -6,6 +6,8 @@ import { AiOutlineDownload } from "react-icons/ai"
 import { motion } from "framer-motion"
 import cvFile from "../assets/Image/Resume.pdf"
 import { useRef, useEffect } from "react"
+import image1 from "../assets/Image/imtiaz.jpg";
+
 
 const Banner = () => {
   const canvasRef = useRef(null)
@@ -364,7 +366,7 @@ const Banner = () => {
             animate={floatingAnimation}
             whileHover={{ scale: 1.05, transition: { duration: 0.3 } }}
           >
-            <img src="/src/assets/Image/imtiaz.jpg" alt="Imtiaz Tanvir" className="w-full h-full object-cover" />
+            <img src={image1} alt="Imtiaz Tanvir" className="w-full h-full object-cover" />
           </motion.div>
         </motion.div>
       </motion.div>

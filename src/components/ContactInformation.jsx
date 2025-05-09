@@ -36,8 +36,13 @@ const ContactInformation = () => {
     },
   ]
 
+  const formFields = [
+    { id: "name", label: "Name", type: "text", placeholder: "Your Name" },
+    { id: "email", label: "Email", type: "email", placeholder: "Your Email" },
+  ]
+
   return (
-    <div ref={ref} className="py-24 overflow-hidden bg-gray-950">
+    <div ref={ref} className="py-16 md:py-24 overflow-hidden bg-gray-950">
       <div className="relative">
         {/* Background Elements */}
         <div className="absolute inset-0 -z-10">
@@ -55,9 +60,9 @@ const ContactInformation = () => {
           />
         </div>
 
-        <div className="px-8 max-w-6xl mx-auto text-center">
+        <div className="px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
           <motion.h2
-            className="text-4xl lg:text-5xl font-bold mb-16 text-white"
+            className="text-3xl md:text-4xl lg:text-5xl font-bold text-center mb-8 md:mb-12 text-white"
             initial={{ opacity: 0, y: -30 }}
             animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: -30 }}
             transition={{ duration: 0.8 }}
@@ -66,23 +71,24 @@ const ContactInformation = () => {
           </motion.h2>
 
           <motion.div
-            className="mb-12 max-w-2xl mx-auto text-gray-400"
+            className="mb-8 md:mb-12 max-w-2xl mx-auto text-gray-400 text-center"
             initial={{ opacity: 0, y: 30 }}
             animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 30 }}
             transition={{ duration: 0.8, delay: 0.2 }}
           >
-            <p className="text-lg">
+            <p className="text-base md:text-lg">
               I'm always open to new opportunities and collaborations. Feel free to reach out through any of the
               following channels:
             </p>
           </motion.div>
 
-          <div className="grid md:grid-cols-4 gap-6">
+          {/* Contact Info Cards */}
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 mb-12 md:mb-16">
             {contactItems.map((item, index) => (
               <motion.a
                 key={index}
                 href={item.href}
-                className="bg-gray-900 p-6 rounded-xl border border-gray-800 hover:border-red-900 transition-all duration-300 group shadow-md"
+                className="bg-gray-900 p-5 rounded-xl border border-gray-800 hover:border-red-900 transition-all duration-300 group shadow-md flex flex-col items-center text-center"
                 initial={{ opacity: 0, y: 50 }}
                 animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 50 }}
                 transition={{ duration: 0.8, delay: 0.3 + index * 0.1 }}
@@ -92,7 +98,7 @@ const ContactInformation = () => {
                 }}
               >
                 <motion.div
-                  className="w-12 h-12 mx-auto mb-4 flex items-center justify-center rounded-full bg-gray-800 text-red-500"
+                  className="w-12 h-12 mb-4 flex items-center justify-center rounded-full bg-gray-800 text-red-500"
                   whileHover={{
                     scale: 1.1,
                     backgroundColor: "rgba(239, 68, 68, 0.2)",
@@ -101,42 +107,35 @@ const ContactInformation = () => {
                   <item.icon size={20} />
                 </motion.div>
                 <h3 className="text-lg font-semibold mb-2 text-white">{item.label}</h3>
-                <p className="text-red-500 group-hover:text-red-400 transition-colors">{item.value}</p>
+                <p className="text-red-500 group-hover:text-red-400 transition-colors text-sm md:text-base break-all">
+                  {item.value}
+                </p>
               </motion.a>
             ))}
           </div>
 
           {/* Contact Form */}
           <motion.div
-            className="mt-16 bg-gray-900 p-8 rounded-xl border border-gray-800 shadow-lg"
+            className="bg-gray-900 p-6 md:p-8 rounded-xl border border-gray-800 shadow-lg max-w-3xl mx-auto"
             initial={{ opacity: 0, y: 50 }}
             animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 50 }}
             transition={{ duration: 0.8, delay: 0.8 }}
           >
-            <h3 className="text-2xl font-semibold mb-6 text-white">Send Me a Message</h3>
+            <h3 className="text-xl md:text-2xl font-semibold mb-6 text-white text-center">Send Me a Message</h3>
             <form className="grid grid-cols-1 md:grid-cols-2 gap-6">
-              <div className="space-y-2 text-left">
-                <label htmlFor="name" className="block text-sm font-medium text-gray-300">
-                  Name
-                </label>
-                <input
-                  type="text"
-                  id="name"
-                  className="w-full px-4 py-3 rounded-lg focus:outline-none focus:ring-2 bg-gray-800 border border-gray-700 focus:ring-red-500 text-white focus:border-transparent"
-                  placeholder="Your Name"
-                />
-              </div>
-              <div className="space-y-2 text-left">
-                <label htmlFor="email" className="block text-sm font-medium text-gray-300">
-                  Email
-                </label>
-                <input
-                  type="email"
-                  id="email"
-                  className="w-full px-4 py-3 rounded-lg focus:outline-none focus:ring-2 bg-gray-800 border border-gray-700 focus:ring-red-500 text-white focus:border-transparent"
-                  placeholder="Your Email"
-                />
-              </div>
+              {formFields.map((field) => (
+                <div key={field.id} className="space-y-2 text-left">
+                  <label htmlFor={field.id} className="block text-sm font-medium text-gray-300">
+                    {field.label}
+                  </label>
+                  <input
+                    type={field.type}
+                    id={field.id}
+                    className="w-full px-4 py-3 rounded-lg focus:outline-none focus:ring-2 bg-gray-800 border border-gray-700 focus:ring-red-500 text-white focus:border-transparent"
+                    placeholder={field.placeholder}
+                  />
+                </div>
+              ))}
               <div className="space-y-2 md:col-span-2 text-left">
                 <label htmlFor="message" className="block text-sm font-medium text-gray-300">
                   Message
@@ -148,10 +147,10 @@ const ContactInformation = () => {
                   placeholder="Your Message"
                 ></textarea>
               </div>
-              <div className="md:col-span-2">
+              <div className="md:col-span-2 flex justify-center">
                 <motion.button
                   type="submit"
-                  className="px-8 py-3 bg-red-500 text-white font-medium rounded-lg hover:bg-red-600 transition-colors"
+                  className="px-8 py-3 bg-red-500 text-white font-medium rounded-lg hover:bg-red-600 transition-colors w-full sm:w-auto sm:min-w-[200px]"
                   whileHover={{ scale: 1.03 }}
                   whileTap={{ scale: 0.97 }}
                 >
