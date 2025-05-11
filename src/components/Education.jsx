@@ -12,7 +12,7 @@ const Education = () => {
     {
       period: "2022 - 2025",
       institution: "Green University of Bangladesh",
-      degree: "Bachelor of Science in Computer Science Engineering",
+      degree: "Bachelor of Science in Computer Science Engineering(CSE)",
       icon: FaUniversity,
     },
     {
